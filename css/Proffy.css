@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    background:#191919;
+}
+.container {
+     position:absolute;
+       top: 130%;
+       right: 0;
+       left: 120px;
+     bottom: 0;
+     margin:0 auto;
+     width: 50%;
+     background: #131313;
+  
+    font-family:'Helvetica Neue', sans-serif;
+}
+
+.imagem {
+     max-width: 50px;
+   
+
+}
+#img{
+	background: red;
+     width: 1px;
+	
+}
+p{
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+h1{
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  
+}

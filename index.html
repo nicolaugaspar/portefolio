@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+ <html lang="pt-pt">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/index.css">
+   
+    <meta name="description" content="Portfolio, fotografia,dinheiro, ui-ux, programação, webdesign,vídeo,compras e icon">
+   <title>Home</title>
+ </head>
+ <body>
+  <h1>
+   <a href="#menu"><img src="./img/seta-esquerda.png"></a>
+ </h1>
+ <div class="icon">
+       <img class="icons"src="./img/html5.png">
+       <img  class="icons"src="./img/css-3.png">
+       <img class="icons"src="./img/javascript.png">
+       <img class="icons"src="./img/physics.png">
+       <img class="icons"src="./img/nodejs.png">
+       <img class="icons"src="./img/illustrator.png">
+       <img class="icons"src="./img/photoshop.png">
+       <img class="icons"src="./img/after-effects.png">
+       
+      </div>
+          <div class="icons-0">
+         <a href="https://vimeo.com/nicolaudesign" target="_blank"title="o melhor vídeo">
+        <img class="icons-1"src="./img/vimeo.png" ></a>
+
+         <a href="https://dribbble.com/gaspar64" target="_blank"title="design de produto">
+         <img  class="icons-1"src="./img/dribbble.png"></a>
+
+         <a href="https://github.com/nicolaugaspar?tab=repositories" target="_blank"  title="o websites e apps"> <img  class="icons-1"src="./img/github.png"></a>
+
+        <a href="https://www.behance.net/paulogaspar1" target="_blank" title="o melhor ui-ux de todos os tempos"> 
+        <img  class="icons-1"src="./img/behance.png"></a>
+  </div>
+   
+  <div class="texto">
+  <h1 class="h1">Eu sou o Paulo Nicolau Gaspar, desenvolvedor de produto. Trabalhei como freelancer  durante 6 meses e depois passei a estudar programação. 
+  </h1>
+  <h4 style="color:red">reservado para publicidade</h4>
+  </div>
+   <div class="container">
+  
+<div class="popover" id="menu">
+ <div class = 'content'>
+  <a href="#" class="close"></a>
+   <div class = 'nav'>
+    <ul class = 'nav_list'>
+      
+      <div class = 'nav_list_item'>
+    <li><a href="#">Home</a></li>
+      </div>
+    
+    <div class = 'nav_list_item'>
+    <li><a href="Portfolio.html">Portfolio</a></li>
+      </div>
+     <div class = 'nav_list_item'>
+    <li><a href="contacto.html">Contacto</a></li>
+      </div>
+      
+  </ul>
+
+  </div>
+ </div>
+ </div>
+ </div>
+
+<script>
+  
+  function mudar(elemento){
+ const array = elemento.innerHTML.split('')
+ elemento.innerHTML=' '
+ 
+  array.forEach((listen, i)=>{
+    setTimeout(()=>{
+ elemento.innerHTML += listen;
+elemento.style.fontSize='1.5rem'
+/*elemento.style.position='absolute'
+elemento.style.top='40px';
+ elemento.style.left='0'
+ elemento.style.right='0';*/
+
+  },50 * i)
+  }) 
+  }
+
+  const titulo = document.querySelector('.h1');
+  mudar(titulo)
+</script>
+ </body>
+ </html>
